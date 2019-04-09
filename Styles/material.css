@@ -1,0 +1,115 @@
+﻿ /*!
+  * Google material stuff
+  */
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+body   
+{
+    background: white;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+.container 		{ 
+    font-family:'Roboto';
+    width:100%; 
+    margin:30px auto 0; 
+    display:block; 
+    background:#FFF;
+    padding:10px 50px 50px;
+}
+
+/* form starting stylings ------------------------------- */
+.group 			   
+{
+    text-align:center;
+    position:relative; 
+    margin-bottom:45px; 
+    width 98%;
+}
+.stack
+{
+    text-align:center;
+    position:relative; 
+    margin-bottom:8px; 
+    width 98%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #334466;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width:150;
+    float: left;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover 
+.dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+div.mid
+{
+    position: relative;
+    display: inline-block;
+    width:150;
+    white-space:nowrap;
+    padding: 12px 16px;
+    float: left;
+}
+div.right
+{
+    position: relative;5
+    display: inline-block;
+    width:178;
+    white-space:nowrap;
+    padding: 12px 16px;
+    float: right;
+}
+div.search {
+    position: relative;
+    display: inline-block;
+    width:150;
+    padding: 12px 16px;
+    float: right;
+    cursor: pointer;
+}

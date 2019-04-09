@@ -1,0 +1,41 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" 
+ xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" 
+ xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type content="text/html; 
+ charset=us-ascii"><meta name=Generator content="Microsoft Word 14 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri","sans-serif";
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style>
+<!--[if gte mso 9]><xml><o:shapedefaults v:ext="edit" spidmax="1026" /></xml><![endif]-->
+<!--[if gte mso 9]><xml><o:shapelayout v:ext="edit"><o:idmap v:ext="edit" data="1" /></o:shapelayout></xml><![endif]-->
+</head><body lang=EN-US link=blue vlink=purple>
+<div class=WordSection1><p class=MsoNormal><b><span style='font-size:14.0pt;color:#4F81BD'>@@FILE@@ - @@NAME@@<o:p></o:p></span></b>
+</p><p class=MsoNormal><b>@@JOBDATE@@<o:p></o:p></b></p><p class=MsoNormal><b><o:p>&nbsp;</o:p></b></p>
+<p class=MsoNormal style='margin-left:.5in'>Actual Hours:<o:p></o:p></p>
+<p class=MsoNormal style='margin-left:1.0in'>START TIME&nbsp;&nbsp; @@START@@<o:p></o:p></p>
+<p class=MsoNormal style='margin-left:1.0in'>&nbsp;&nbsp;&nbsp; END TIME&nbsp;&nbsp; @@END@@<o:p></o:p></p>
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p><p class=MsoNormal style='margin-left:.5in'>WORK ORDER:<o:p></o:p></p>
+<p class=MsoNormal style='margin-left:.5in'>@@WKO@@<o:p></o:p></p>
+<p class=MsoNormal style='margin-left:.5in'><o:p>&nbsp;</o:p></p><p class=MsoNormal style='margin-left:.5in'>ADDITIONAL INFORMATION:<o:p></o:p></p>
+<p class=MsoNormal style='margin-left:.5in'>@@INFO@@<o:p></o:p></p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=MsoNormal><o:p>&nbsp;</o:p></p><p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal><span style='font-size:10.0pt;color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%'>This is an automated message from Smartflow, STRONE&#8217;s claim management system. <o:p></o:p></span></p><p class=MsoNormal><span style='font-size:10.0pt;color:#A6A6A6;mso-style-textfill-fill-color:#A6A6A6;mso-style-textfill-fill-alpha:100.0%'>Please do not reply to this email.<o:p></o:p></span></p><p class=MsoNormal><o:p>&nbsp;</o:p></p></div></body></html>

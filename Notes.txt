@@ -1,0 +1,14 @@
+
+x Logout
+x Security on all pages (via master)
+x show file# on folder sel
+x show # of photos in folder
+x phone no has garbage
+x prefix 1 for long distance
+
+Crew
+x site master mods from claims page also
+x make sure uploads complete task
+x pass room on uploads
+x doc hrefs for each day (last week, this week, next week)  and load on current
+x dividers for days

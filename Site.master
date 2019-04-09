@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SFLite.SiteMaster" %>
+
+<!DOCTYPE html >
+<html lang="en" >
+
+<head id="Head1"  runat="server">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="font-awesome-4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/semantic.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <script src="Scripts/semantic.js" type="text/javascript"></script>
+
+    <!-- Content, Style overrides, JS HERE !-->
+<style>
+    .ui.fixed.inverted.menu 
+    {
+        background-color:#012560;
+    }
+    .ui.fixed.inverted.menu.item
+    {
+        background-color:#CFCFCF;
+    }
+
+</style>
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+
+    <form id="Form1" runat="server">
+    <asp:HiddenField ID="hf0" runat="server" />
+    <div class="page">
+
+        <div class="header" >
+
+            <div class="ui fixed inverted menu">
+            <div class="ui container">
+                <div id="MuiMenu" class="ui simple dropdown item" style="width:50px; display:">
+                    <img id="Mmenu" src="Sidebar_Inverse_UI.png" width="16px" height="24px" />
+                    <div class="menu">
+                        <a class="item" href="Default.aspx">Home</a>
+                        <a class="item" runat="server" id="action1" href="Claims.aspx">Active Claims</a>
+                        <div class="divider"></div>
+                        <a class="item" href="Logon.aspx">Logout</a>
+                    </div>
+                </div>
+                <span id="title" runat="server" style=" padding-top:12px; white-space:nowrap; font-size:medium; color:#fff"><b><em>&nbsp;&nbsp;SMARTFLOW Lite</em></b></span>
+                <div id="mpSrch" runat="server" class="right inverted menu">
+                    <div class="ui right aligned category search item">
+                        <div class="ui icon input">
+                            <input type="text" runat="server" id="txtSrch" size="8" placeholder="Search...">
+                            &nbsp;&nbsp;<img style="margin-top:6px;" src="Images/spyglass.png" onclick="searchIt()" height="24px" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div style="margin-top:55px;" class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+
+        <div class="clear">
+        </div>
+
+    </div>
+
+    <div class="footer">
+    </div>
+
+
+    </form>
+
+    
+    <script type="text/javascript">
+
+
+        function searchIt() {
+            var term = document.getElementById("txtSrch");
+            var hf0 = document.getElementById("hf0");
+            if (term.value != "") {
+                hf0.value = term.value;
+                __doPostBack('Search', '');
+            }
+                term.value = "";
+        }
+
+	</script>
+
+</body>
+</html>

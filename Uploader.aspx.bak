@@ -1,0 +1,116 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Image.Master" AutoEventWireup="True" CodeBehind="Uploader.aspx.cs" Inherits="SFLite.Uploader" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+
+    <link href="Styles/paper-collapse.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/paper-collapse.js" type="text/javascript"></script>
+
+    <!-- Content, Style overrides, JS HERE !-->
+<style>
+        .last.container {
+        margin-bottom: 300px !important;
+        }
+        h4.ui.center.header {
+        margin-top: 1em;
+        }
+        .content { border: 1px; }
+        .ui.cards > .card,
+        .ui.card {
+          width: 99%;
+        }
+        .popped {
+          z-index: 500;
+        }
+        .ui.floated.hlabel {
+          float: left;
+        }
+
+        h5.collapse-card__title  {
+          color:#2874CE;
+        }
+        .group  {
+            text-align: center;
+        }   
+</style>
+
+<script type="text/javascript">
+
+    function MpageBack() {
+        window.location = 'Claims.aspx';
+    }
+
+    function chkUpload() {
+        var btn = document.getElementById("btnSubmit");
+        var TypeSelect = document.getElementById("<%= dllFileType.ClientID %>");
+        var descRow = document.getElementById("<%= descRow.ClientID %>");
+        var txtDesc = document.getElementById("<%= txtDesc.ClientID %>");
+        var FileSelect = document.getElementById("<%= FileUpload.ClientID %>");
+        btn.disabled = false;
+        var selectedText = TypeSelect.options[TypeSelect.selectedIndex].text;
+        if (FileSelect.value.trim() == "") btn.disabled = true;
+        if (selectedText == "Other") {
+            descRow.style.display = "";
+            event.preventDefault();
+        } else {
+            descRow.value = "";
+            descRow.style.display = "none";
+            event.preventDefault();
+        } 
+    }
+
+</script>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        document.getElementById("btnSubmit").disabled = true;
+    });
+</script>
+
+<script type="text/javascript">
+
+</script>
+
+    <asp:LinkButton ID="LinkButton1" runat="server" /> 
+
+    <div id="ClaimList" runat="server">
+        <h4 class="ui center aligned header">Upload Document</h4>
+        <div class="col-sm-4">
+            <div style='margin: .8rem .4rem 0 .4rem;'>
+                <div class='ui card'>
+                    <div class='content'>
+                        <div class='header'>
+                            <div class='ui floated hlabel'><% getJobName(); %></div>
+                        </div>
+                    </div>
+                    <div class='extra content'>
+                        <table align="center">
+                            <tbody>
+                                <tr>
+                                    <td style="padding-top:8px;"><asp:dropdownlist width="100%" id="dllFileType" runat="server" cssclass="DEInput"></asp:dropdownlist></td>
+                                </tr>
+                                 <tr id="descRow" runat="server">
+                                    <td style="padding-top:8px;"><span style="font-size:smaller">Document Title</span></br><asp:textbox  width="100%" ID="txtDesc" runat="server" columns="32"></asp:textbox></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top:8px;"><asp:FileUpload ID="FileUpload" runat="server"></asp:FileUpload></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="group">
+                   <asp:Label ID="lblmsg" runat="server" ForeColor="#CC0000"></asp:Label><br /><br />
+                   <button class="ui button" id="btnSubmit" onclick="javascript:__doPostBack('btnSubmit','')">
+                        Upload Files
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</asp:Content>
+
+

@@ -1,0 +1,432 @@
+/* **************************************************** */
+/* STYLESHEET                                           */
+/*      Last Update: 2005                               */
+/*      Author:      Sarah Asterbadi                    */
+/*                                                      */
+/* Colour Scheme:                                       */
+/*      Teal Dark    5C8688                             */
+/*      Teal 2       ABC7C6                             */
+/*      Teal 3       C3D6D8                             */
+/*      Teal 4       EAF1F1                             */
+/*      Dark Orange  E2691F                             */
+/*                                                      */
+/*                                                      */
+/* **************************************************** */
+BODY
+{
+	margin: 0;
+    padding: 5px;
+	width: 100%;
+	color: #000;
+    background-color: #666;
+    font-family: Verdana, Arial;
+    font-size: 10pt;
+    text-align: left
+}
+TABLE
+{
+    font-size: 10pt;
+    font-family: Verdana, Arial;
+    border: 0;
+    width: 100%;
+    border-color: #fff
+}
+A
+{
+    COLOR: #1d6846;
+    text-decoration: none
+}
+A:visited
+{
+    COLOR: #1d6846;
+    text-decoration: none
+}
+A:active
+{
+    COLOR: #1d6846;
+    text-decoration: none
+}
+A:hover
+{
+    COLOR: #E2691F;
+    text-decoration: underline
+}
+.pagetitle
+{
+    font-size: 12pt;
+    color: #5C8688;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+.shadowwhite
+{
+	background-image: url(/strwebflow/images/str_shadow.gif);
+	background-repeat:repeat-x;
+	line-height: 6px
+}
+.shadowblue
+{
+	background-image: url(/strwebflow/images/str_shadowblue.gif);
+	background-repeat:repeat-x;
+	line-height: 6px	
+}
+.shadowwhitebottom
+{
+	background-image: url(/strwebflow/images/str_shadowbottom.gif);
+	background-repeat:repeat-x;
+	line-height: 6px	
+}
+.shadowbluebottom
+{
+	background-image: url(/strwebflow/images/str_shadowbluebottom.gif);
+	background-repeat:repeat-x;
+	line-height: 6px
+}
+hr
+{
+	color: #5C8688	
+}
+/* **************************************************** */
+/* LEFT MENU                                            */
+/* **************************************************** */
+#leftmenu {
+	PADDING-LEFT: 10px;
+	background-color: #c3d6d8;
+}
+.leftmenuheader
+{
+	PADDING-LEFT: 9px; 
+	PADDING-BOTTOM: 5px; 
+	FONT: bold 11px/18px Arial,Verdana,Geneva; 
+	COLOR: #333;
+	background-color: #eaf1f1
+}
+.leftmenuheader A:link {
+	FONT: bold 11px/18px Arial,Verdana,Geneva; COLOR: #333; TEXT-DECORATION: none
+}
+.leftmenuheader A:active {
+	FONT: bold 11px/18px Arial,Verdana,Geneva; COLOR: #333; TEXT-DECORATION: none
+}
+.leftmenuheader A:visited {
+	FONT: bold 11px/18px Arial,Verdana,Geneva; COLOR: #333; TEXT-DECORATION: none
+}
+.leftmenuheader A:hover {
+	FONT: bold 11px/18px Arial,Verdana,Geneva; COLOR: #e2691f; TEXT-DECORATION: none
+}
+.leftmenucontent {
+	BORDER-TOP: #c3d6d8 1px solid; 
+	PADDING-LEFT: 9px; 
+	FLOAT: right; 
+	WIDTH: 148px; 
+	BACKGROUND-COLOR: #eaf1f1
+}
+.leftmenucontent A:link {
+	FONT: 10px/18px Arial,Verdana,Geneva; COLOR: #000; TEXT-DECORATION: none
+}
+.leftmenucontent A:active {
+	FONT: 10px/18px Arial,Verdana,Geneva; COLOR: #000; TEXT-DECORATION: none
+}
+.leftmenucontent A:visited {
+	FONT: 10px/18px Arial,Verdana,Geneva; COLOR: #000; TEXT-DECORATION: none
+}
+.leftmenucontent A:hover {
+	FONT: 10px/18px Arial,Verdana,Geneva; COLOR: #e2691f; TEXT-DECORATION: none
+}
+/* **************************************************** */
+/* Header Summary                                       */
+/* **************************************************** */
+.HeaderSummary
+{
+}
+.HeaderSummary .StatusActive
+{
+	font-weight: bold;
+	color: #339900
+}
+.HeaderSummary .StatusOnHold
+{
+	font-weight: bold;
+	color: #ff0000
+}
+.HeaderSummary .StatusClosed
+{
+	font-weight: bold;
+	color: Gray
+}
+.HeaderSummary .Map
+{
+	float: left;
+	border: 0;
+	margin: 5 px;
+}
+/* **************************************************** */
+/* TASK */
+/* **************************************************** */
+.Task
+{
+width: 88%;
+margin-left: 6%;
+margin-right: 6%;
+background-color: #C3D6D8;
+}
+.Task TD.TaskBody
+{
+padding: 10px; 
+background-color: #fff
+}
+.Task TD.TaskHeader
+{
+padding: 10px; 
+font-weight:bold;
+align: center;
+text-align: center;
+}
+.Task TD.TaskFooter
+
+{
+padding: 10px; 
+font-weight:bold;
+text-align: center
+}
+.TaskButton
+{
+background-color:#C3D6D8;
+font-family:Verdana, Arial;
+font-size: 12pt;
+}
+ 
+
+/* **************************************************** */
+/* Data Entry Pages (Including Tasks) */
+/* **************************************************** */
+Table.DE
+{
+}
+
+/* For Displaying Data */
+
+TD.DDLabel 
+{
+text-align: right;
+vertical-align: top;
+padding: 5px;
+}
+TD.DDLabel1 
+{
+vertical-align: top;
+padding: 5px;
+}
+TD.DDField
+{
+background-color:#EAF1F1;
+text-align: left;
+vertical-align: top;
+padding: 5px;
+}
+
+TD.tdLine0 
+{
+    BACKGROUND-COLOR: #ffffff
+}
+TD.tdLine1 
+{
+    BACKGROUND-COLOR: #eaf1f1
+}
+TD.tdLine2 
+{
+    BACKGROUND-COLOR: #fffffe
+}
+
+/* For Data Entry */
+
+TD.DELabel 
+{
+text-align: right;
+vertical-align: top;
+padding: 10px 5px 5px 5px;
+}
+TD.DELabelRequired 
+{
+color: #E2691F;
+text-align: right;
+vertical-align: top;
+padding: 10px 5px 5px 5px;
+}
+TD.DELabelRequired1
+{
+color: #E2691F;
+vertical-align: top;
+padding: 10px 5px 5px 5px;
+}
+TD.DEField
+{
+background-color:#EAF1F1;
+text-align: left;
+vertical-align: top;
+padding: 5px;
+}
+.DEInput
+{
+	font-family:Verdana, Arial;
+	font-size: 10pt; 
+	border: 1;
+	border-style: solid;
+	border-color: #5C8688
+}
+TD.DEHeader
+{
+color:#5C8688;
+background-color: #C3D6D8;
+font-weight: bold;
+font-size:larger
+}
+
+
+/* **************************************************** */
+/* TABS                                                 */
+/* **************************************************** */
+ 
+.navlist
+{
+ padding: 3px 0;
+ margin-left: 1;
+ margin-right: 1;
+ border-bottom: 1px solid #5C8688;
+ font: bold 10px Verdana, sans-serif;
+}
+.navlist li
+{
+ list-style: none;
+ margin: 0;
+ display: inline;
+}
+.navlist li a
+{
+ padding: 3px 0.5em;
+ margin-left: 3px;
+ border: 1px solid #5C8688;
+ border-bottom: none;
+ background: #C3D6D8;
+ text-decoration: none;
+}
+.navlist li a:link { color: #000; }
+.navlist li a:visited { color: #000; }
+.navlist li a:hover
+{
+ color: #C3D6D8;
+ background: #5C8688;
+ border-color: #5C8688;
+}
+.navlist li a.current
+{
+ background: white;
+ border-bottom: 1px solid white;
+}
+
+
+/* **************************************************** */
+/* LIST                                                 */
+/* **************************************************** */
+.list
+{
+    width: 95%;
+    background-color: #FFF
+}
+.list A {Color:#1d6846; text-decoration: none}
+.list A:visited {Color: #1d6846}
+.list A:active {Color: deeppink;text-decoration: none}
+.list A:hover {Color: salmon;text-decoration: underline}
+
+.list .listheading
+{
+    FONT-WEIGHT: bold;
+    COLOR: white;
+    BACKGROUND-COLOR: #5C8688
+}
+.list .listheading A {color: #fff; text-decoration: none}
+.list .listheading A:visited {color: #fff; text-decoration: none}
+.list .listheading A:active {color: #fff; text-decoration: none}
+.list .listheading A:hover {color: #fff; text-decoration: underline}
+
+.list .listline0
+{
+    BACKGROUND-COLOR: #ffffff
+}
+.list .listline1
+{
+    BACKGROUND-COLOR: #eaf1f1
+}
+.list .listaction
+{
+    BACKGROUND-COLOR: #abc7c6;
+    TEXT-ALIGN: right
+}
+/* **************************************************** */
+/* TOPMENU                                              */
+/* **************************************************** */
+ 
+#topmenu
+{
+    background-color: #999;
+    color: #fff;
+    width: 100%;
+    font-size: 10pt;
+    padding: 1px;
+}
+#topmenu A
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+#topmenu A:visited 
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+#topmenu A:active
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: underline
+}
+#topmenu A:hover
+{
+    COLOR: #ff9933;
+    TEXT-DECORATION: underline
+}
+TD.stlUserRowTDOdd
+{
+	WIDTH: 10px; BACKGROUND-COLOR: #fff; Border-Bottom: Gray 1px Solid
+}
+TD.stlUserRowTD
+{
+	WIDTH: 10px; BACKGROUND-COLOR: #fff; Border-Bottom: Gray 1px Solid
+}
+
+/****
+*/
+.Print
+{	
+	border:1; border-color:Black; border-style:outset; width: 95%; background-color: #FFF
+}
+
+.Print .listheading
+{
+    FONT-WEIGHT: bold;
+    COLOR: white;
+    BACKGROUND-COLOR: #5C8688
+}
+
+.Print .listline0
+{
+    BACKGROUND-COLOR: #ffffff
+}
+.Print .listline1
+{
+    BACKGROUND-COLOR: #eaf1f1
+}
+.Print .listaction
+{
+    BACKGROUND-COLOR: #abc7c6;
+    TEXT-ALIGN: right
+}

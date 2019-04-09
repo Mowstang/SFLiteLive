@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Image.master.cs" Inherits="SFLite.ImageMaster" %>
+<!DOCTYPE html >
+<html lang="en" >
+
+<head id="Head1"  runat="server">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="font-awesome-4.6.2/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/semantic.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <script src="Scripts/semantic.js" type="text/javascript"></script>
+
+    <!-- Content, Style overrides, JS HERE !-->
+<style>
+    .ui.fixed.inverted.menu 
+    {
+        background-color:#012560;
+    }
+    .ui.fixed.inverted.menu.item
+    {
+        background-color:#CFCFCF;
+    }
+
+</style>
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+
+    <form id="Form1" runat="server">
+
+    <div class="page">
+
+        <div class="header" >
+            <div class="ui fixed inverted menu">
+                <div class="ui container">
+
+                    <div id="MuiBack" class="ui item" style="width:60px;">
+                        <img id="Mback" src="Images/Back_Inverse_UI.png" width="36px" height="26px" onclick="MpageBack()" />
+                    </div>
+
+                    <span id="title" runat="server" style=" padding-top:12px; white-space:nowrap; font-size:medium; color:#fff"><b><em>&nbsp;&nbsp;SMARTFLOW Lite</em></b></span>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div style="margin-top:55px;" class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+
+        <div class="clear">
+        </div>
+
+    </div>
+
+    <div class="footer">
+    </div>
+
+    </form>
+
+</body>
+</html>
